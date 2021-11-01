@@ -1,11 +1,11 @@
 //QUICKSORT
 import java.util.Scanner;
 public class QuickSort {
-    static int partition(int[] array,int low,int high){
-        int pivot=array[high];
-        int s=low-1;
-        for(int j=low;j<=high-1;j++){
-            if(array[j]<pivot){
+    static int partition(int[] array,int low,int high){   //partition function - *splitting a array into two as left and right using pivot element 
+        int pivot=array[high];   // taking last element in the array as pivot
+        int s=low-1;             //s = low -1;low = first element ;high = last element  
+        for(int j=low;j<=high-1;j++){ loop from zero to second last element
+            if(array[j]<pivot){  
                 s=s+1;
                 swap(array,j,s);
             }
